@@ -1,0 +1,19 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.container{
+    width: 80%;
+    color: white;
+    background: lightslategray;
+    border-radius: 1.5em;
+    margin: 10%;    
+    align-items: center;
+    border: 5px solid;
+    padding: 1em;
+    position: absolute;
+}
+
+.container h2{
+    text-align:center;
+}

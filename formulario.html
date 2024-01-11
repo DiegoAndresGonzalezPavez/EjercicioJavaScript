@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/fuction.js"></script>
+    <title>Chile Limpio | Formulario</title>
+</head>
+<body>
+    <div class="container"> <br>
+        <h2>Chile Limpio</h2>
+        
+        <form action="formulario.html" method="post" name="datos">
+            <!--rut-->
+            <div class="form-group">
+                <label for="rut">Rut:</label>
+                <input type="text" id="rut" name="rut" class="form-control" minlength="9" maxlength="10" placeholder="Dígite su Rut"  require>
+            </div>
+
+            <!--apellido paterno-->
+            <div class="form-group">
+                <label for="apeP">Apellido Paterno:</label>
+                <input type="text" id="apeP" name="apeP" class="form-control" minlength="3" maxlength="20" placeholder="Dígite su Apelldio Paterno" require>
+            </div>
+
+            <!--apellido materno-->
+            <div class="form-group">
+                <label for="apeM">Apellido Materno:</label>
+                <input type="text" id="apeM" name="apeM" class="form-control" minlength="3" maxlength="20" placeholder="Dígite su Apellido Materno" require>
+            </div>
+
+            <!--nombre-->
+            <div class="form-group">
+                <label for="nom">Nombre:</label>
+                <input type="text" id="nom" name="nom" class="form-control" minlength="3" maxlength="20" placeholder="Dígite su Nombre" require>
+            </div>
+
+            <!--Fecha Nacimiento-->
+            <div class="form-group">
+                <label for="nacimiento">Fecha de Nacimiento:</label><br>
+                <input type="date" id="nacimiento" name="nacimiento" class="form-group" required>
+            </div>
+
+            <!--edad-->
+            <div class="form-group">
+                <label for="edad">Edad: </label>
+                <input type="number" id="edad" name="edad" class="form-control" min="18" max="35" placeholder="Dígite su Edad" require>
+            </div>
+
+            <!--motivacion-->
+            <div class="form-group">
+                <label for="genero">Género:</label>
+                <select id="genero" class="form-control">
+                    <option value="0">Hombre</option>
+                    <option value="1">Mujer</option>
+                    <option value="2">Otro</option>
+                </select>
+            </div>
+
+            <!--email-->
+            <div class="form-group">
+                <label for="correo">Email:</label>
+                <input type="email" id="correo" name="correo" class="form-control" placeholder="Dígite su email" require>
+            </div>
+
+            <!--Celular-->
+            <div class="form-group">
+                <label for="celular">Celular:</label>
+                <input type="text" id="celular" name="celular" class="form-control" minlength="9" maxlength="12" placeholder="Dígite su Celular require" required>
+            </div>
+
+            <!--profesion-->
+            <div class="form-group">
+                <label for="profesion">Profesion:</label>
+                <input type="text" id="profesion" name="profesion" class="form-control" placeholder="Dígite su Profesión" require>
+                
+            </div>
+            
+            <!--motivacion-->
+            <div class="form-group">
+                <label for="motivacion">Motivacion para trabajar:</label>
+                <select id="motivo" class="form-control">
+                    <option value="0">Seleccione una opcion</option>
+                    <option value="1">Mejorar CV</option>
+                    <option value="2">Mejorar Experiencia en área laboral</option>
+                    <option value="3">Trabajo estable</option>
+                    <option value="4">Otro</option>
+                </select>
+            </div>
+
+            <input type="button" value="Crear Carta" class="btn btn-primary" onclick="crearCarta()">
+
+            <div class="form-group">
+                <textarea name="comentario" id="carta" cols="30" rows="10"></textarea>
+            </div>
+        </form>
+        <br>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> 
+</body>
+</html>
